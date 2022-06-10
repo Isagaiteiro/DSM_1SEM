@@ -15,8 +15,8 @@ int main(int argc, char ** argv){
     setlocale (LC_ALL,"portuguese");
     
     int tipo; 
-    float dados[100], total;
-    string escolha;
+    float a, b,c, total;
+    string escolha, escolha2, escolha3;
     
     do {
         cout<<"==================================\n";
@@ -32,43 +32,90 @@ int main(int argc, char ** argv){
         
         switch (tipo){
             case 1:
-                cout<<"Escolha o primeiro número da soma: \n";    
-                cin>>dados[1];
-                cout<<"Escolha o segundo número da soma: \n";
-                cin>>dados[2];
-                total=dados[1]+dados[2];
-                cout<<dados[1]<<" + "<<dados[2]<<" = "<<total<<endl; 
-                
+                cout<<"Escolha o primeiro número: \n";    
+                cin>>a;
+                cout<<"Escolha o segundo número: \n";
+                cin>>  b;
+                total=a+b;
+                cout<<a<<" + "<<b<<" = "<<total<<endl;
+                cout<<"Deseja somar mais números?\n";
+                cin>>escolha2;
+                if (escolha2=="s"){
+                    do {
+                        cout<<total<<" + ";
+                        cin>>c;
+                        total=total+c;
+                        cout<<total<<endl;
+                        cout<<"Adicionar mais um número?\n";
+                        cin>>escolha3;
+                    } while (escolha3=="s");
+                }
                 cout<<"==================================\n";
                 break;
             
             case 2:
                 cout<<"Escolha o primeiro número da subtração: \n";    
-                cin>>dados[1];
+                cin>>a;
                 cout<<"Escolha o segundo número da subtração: \n";
-                cin>>dados[2];
-                total=dados[1]-dados[2];
-                cout<<dados[1]<<" - "<<dados[2]<<" = "<<total<<endl;  
+                cin>>b;
+                total=a-b;
+                cout<<a<<" - "<<b<<" = "<<total<<endl;  
+                cout<<"Deseja subtrair mais números?\n";
+                cin>>escolha2;
+                if (escolha2=="s"){
+                    do {
+                        cout<<total<<" - ";
+                        cin>>c;
+                        total=total-c;
+                        cout<<total<<endl;
+                        cout<<"Subtrair mais um número?\n";
+                        cin>>escolha3;
+                    } while (escolha3=="s");
+                }
                 cout<<"==================================\n";
                 break;
                 
             case 3:
                 cout<<"Escolha o primeiro número da multiplicação: \n";    
-                cin>>dados[1];
+                cin>>a;
                 cout<<"Escolha o segundo número da multiplicação: \n";
-                cin>>dados[2];
-                total=dados[1]*dados[2];
-                cout<<dados[1]<<" * "<<dados[2]<<" = "<<total<<endl;  
+                cin>>b;
+                total=a*b;
+                cout<<a<<" * "<<b<<" = "<<total<<endl;  
+                cout<<"Deseja multiplicar mais números?\n";
+                cin>>escolha2;
+                if (escolha2=="s"){
+                    do {
+                        cout<<total<<" * ";
+                        cin>>c;
+                        total=total*c;
+                        cout<<total<<endl;
+                        cout<<"Multiplicar mais um número?\n";
+                        cin>>escolha3;
+                    } while (escolha3=="s");
+                }
                 cout<<"==================================\n";
                 break;
                 
             case 4:
                 cout<<"Escolha o primeiro número da divisão: \n";    
-                cin>>dados[1];
+                cin>>a;
                 cout<<"Escolha o segundo número da divisão: \n";
-                cin>>dados[2];
-                total=dados [1]/dados[2];
-                cout<<dados[1]<<" / "<<dados[2]<<" = "<<total<<endl;  
+                cin>>b;
+                total=a/b;
+                cout<<a<<" / "<<b<<" = "<<total<<endl; 
+                cout<<"Deseja dividir por mais números?\n";
+                cin>>escolha2;
+                if (escolha2=="s"){
+                    do {
+                        cout<<total<<" / ";
+                        cin>>c;
+                        total=total/c;
+                        cout<<total<<endl;
+                        cout<<"Dividir por mais um número?\n";
+                        cin>>escolha3;
+                    } while (escolha3=="s");
+                }
                 cout<<"==================================\n";
                 break;
         }
@@ -78,6 +125,11 @@ int main(int argc, char ** argv){
         cin>>escolha;
     
     } while (escolha=="s");
-    
+    cout<<"===========================================================\n";
+    cout<<"-----------------------------------------------------------\n";
+    cout<<"Tudo bem, nos vemos de novo em seus próximos cálculos...\n";
+    cout<<"-----------------------------------------------------------\n";
+    cout<<"===========================================================\n";
+        
     return 0;
 }
