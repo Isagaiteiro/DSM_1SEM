@@ -1,0 +1,46 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #efd9db;
+    
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    background-color: #ffb6c1;
+    padding: 10px;
+}
+
+p {
+    color: black;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+}
+
+form{
+    position: relative;
+    float: left;
+    background-color:#ffb6c1;
+    border-radius: 5px;
+    width: 500px;
+    padding: 20px;
+    left: 50%;
+    margin-left: -250px;
+    line-height: 1.5em;
+}
+
+.rodape {
+    background-color:#ffb6c1;
+    color: aliceblue;
+    margin: 50px;
+    padding: 10px;
+    font-size: 25px;
+}
+
