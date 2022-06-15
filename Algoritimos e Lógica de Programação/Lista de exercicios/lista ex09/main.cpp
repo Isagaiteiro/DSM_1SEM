@@ -38,14 +38,14 @@ int main(int argc, char** argv){
     cout<<somab<<endl;
     cout<<"========================================\n";
     
-    cout<<"Soma da lista 1 e lista2: \n";
+    cout<<"Soma da lista 1 e lista 2: \n";
     for(int i=0;i<=8;i++){
         c[i]=a[i]+b[i];
         cout<<c[i]<<" | ";
     }
     cout<<"\n========================================\n";
     
-    cout<<"Subtração da lista 1 e lista2: \n";
+    cout<<"Subtração da lista 1 e lista 2: \n";
     for(int i=0;i<=8;i++){
         d[i]=a[i]-b[i];
         cout<<d[i]<<" | ";
