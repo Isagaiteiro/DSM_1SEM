@@ -9,14 +9,14 @@ int main(int argc, char** argv){
     int a[10];
     int n=0;
     
-    while (n <9) {
+    while (n <=9) {
         cout<<"Digite um número: \n";
         cin>> a[n];
         n++;
     }
     
-    for (int j=0; j<9; j++) {
-        for (int i = 0; i < 9; i++) {
+    for (int j=0; j<=9; j++) {
+        for (int i = 0; i <= 9; i++) {
           if (a[i] > a[i+1]) {
              int temp = a[i];
              a[i] = a[i+1];
@@ -25,7 +25,7 @@ int main(int argc, char** argv){
         }
     }
     cout<<"=======================================\n";
-    for (int i=0; i < 9; i++){
+    for (int i=0; i <= 9; i++){
         cout << a[i] << " | ";
     }
     cout<<"\n=======================================\n";
