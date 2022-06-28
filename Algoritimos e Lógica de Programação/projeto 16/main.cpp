@@ -114,7 +114,6 @@ int main(){
 
 //Função que testa se já tem um prato cadastrado.
 void teste_cardapio(){
-    bool v;
     int x;
     string lista[x][3], prato;
     
