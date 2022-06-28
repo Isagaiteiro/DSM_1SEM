@@ -8,27 +8,22 @@
 
 using namespace std;
 
-//int x;
-//string prato, lista [x][2];
+void teste_cardapio();
+int x;
+string prato;
+//lista [x][3];
 
-void cardapio(){
-    int x;
-    string prato, lista[x][2];
-    for (int i=0; i<x; i++) {
-        if (lista[i][1]==prato){
-            cout<<"O prato já está cadastrado.\n";
-        }
-   } 
-}
+
 
 int main(){
     int opc_menu, x, n=0, tipo_pesq;
     char opc_case1='s', retornar='s';
-    string nome, prato, lista[x][2];
+    string nome, prato, lista[x][3];
     
-    
+ //Usuário define a quantidade de linhas da matriz   
     cout<<"Digite a quantidade de convidados que terá na festa:\n";
     cin>>x;
+//Menu de ações com estrutura de repetição.
     do {
         cout<<"---------Menu---------\n";
         cout<<"Escolha uma das opções abaixo: \n";
@@ -37,15 +32,22 @@ int main(){
         cout<<"3.Imprimir lista de convidados.\n";
         cout<<"4.Sair.\n";
         cin>>opc_menu;
-        
+        //Funcionalidades do menu.
         switch (opc_menu){
+            //Inserir convidado nas linhas da matriz.
             case 1:
                 do {
                     if (n<x){
                         cout<<"Digite o nome do convidado: \n";
                         cin>>lista[n][0];
-                        cout<<"Digite o prato que ele irá trazer:\n";
+                        cout<<"Digite o sobrenome do convidado:\n";
                         cin>>lista[n][1];
+                        cout<<"Digite o prato que ele irá trazer:\n";
+                        cin>>prato;
+                        
+                        //Verificação de se o prato já está cadastrado.
+                        //teste_cardapio();
+                        lista[n][2]=prato;
                         n++;
                         cout<<"Deseja adicionar mais um convidado? (s) ou (n)\n";
                         cin>>opc_case1;
@@ -58,6 +60,7 @@ int main(){
                 cout<<"Deseja retornar ao menu? (s) ou (n)\n";
                 cin>>retornar;
             break;
+            //Pesquisar se já tem um dado inserido na matriz.
             case 2:
                 cout<<"Como deseja realizar a pesquisa:\n";
                 cout<<"1.nome.\n";
@@ -69,7 +72,7 @@ int main(){
                     for (int i=0; i<x; i++) {
                         if (lista[i][0]==nome){
                             cout<<"Esse convidado já está cadastrado.\n"; 
-                            cout<<nome<<" trará "<<lista[i][1]<<".\n";
+                            cout<<nome<<" trará "<<lista[i][2]<<".\n";
                         }
                     }
                     
@@ -78,7 +81,7 @@ int main(){
                 //    cout<<"Digite o prato que deseja pesquisar: \n";
                 //    cin>>prato;
                 //    for (int i=0; i<x; i++) {
-                //        if (lista[i][1]==prato){
+                //        if (lista[i][2]==prato){
                 //            cout<<"O prato já está cadastrado.\n";
                 //        }
                 //    } 
@@ -86,20 +89,38 @@ int main(){
                 cout<<"Deseja retornar ao menu? (s) ou (n)\n";
                 cin>>retornar;
             break;
+            
+            //Imprimir lista de convidados completa.
             case 3:
                 cout<<"Nome   |   Prato   \n";
                 for (int i=0; i<x; i++){
-                    cout<<lista[i][0]<<" | "<<lista[i][1]<<endl;
+                    cout<<lista[i][0]<<" | "<<lista[i][1]<<" | "<<lista[i][2]<<endl;
                 }
                 cout<<"Deseja retornar ao menu? (s) ou (n)\n";
                 cin>>retornar;
             break;
+            //Sair do programa.
             case 4:
-                cout<<"O programa será encerrado, obgigado por utilizar.\n";
+                retornar='n';
             break;
         }
     } while (retornar=='s');
+    
+    //Mensagem de encerramento.
     cout<<"O programa será encerrado, obrigado por utilizar.\n";
 
     return 0;
+}
+
+//Função que testa se já tem um prato cadastrado.
+void teste_cardapio(){
+    bool v;
+    int x;
+    string lista[x][3], prato;
+    
+    for (int i=0; i<x; i++) {
+        if (lista[i][2]==prato){
+            cout<<"O prato já está cadastrado.\n";
+        }
+   } 
 }
