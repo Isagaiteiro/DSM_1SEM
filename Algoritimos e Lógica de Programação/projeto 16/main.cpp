@@ -8,7 +8,7 @@
 
 using namespace std;
 
-void teste_cardapio();
+void teste_cardapio(string lista[][3]);
 int x;
 string prato;
 //lista [x][3];
@@ -46,7 +46,7 @@ int main(){
                         cin>>prato;
                         
                         //Verificação de se o prato já está cadastrado.
-                        //teste_cardapio();
+                        //teste_cardapio(lista);
                         lista[n][2]=prato;
                         n++;
                         cout<<"Deseja adicionar mais um convidado? (s) ou (n)\n";
@@ -113,9 +113,9 @@ int main(){
 }
 
 //Função que testa se já tem um prato cadastrado.
-void teste_cardapio(){
+void teste_cardapio(string lista[][3]){
     int x;
-    string lista[x][3], prato;
+    string prato;
     
     for (int i=0; i<x; i++) {
         if (lista[i][2]==prato){
