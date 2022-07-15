@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(189, 193, 196);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+header, main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+h1{
+    color: gray;
+    padding-bottom: 15px;
+}
+
+button {
+    width: 80px;
+    background-color: gray;
+    padding: 10px;
+    color: white;
+    border: solid rgb(109, 107, 107) 1px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(189, 193, 196);
+}
+
+#turnOn, #turnOff{
+    margin: 10px;
+}
