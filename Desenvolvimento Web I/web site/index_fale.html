@@ -5,8 +5,10 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--Link do CSS-->
+  <link rel="stylesheet" href="./CSS/style.css">
 
-
+  <!--Link do Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -16,7 +18,7 @@
   <title></title>
 </head>
 
-<body style="margin-top: 70px; margin-bottom: 200px;padding: 16px; background-color: rgb(241, 203, 209);">
+<body>
 
   <nav class="navbar navbar-expand-lg fixed-top bg-light">
     <div class="container-fluid">
@@ -27,11 +29,14 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="./index.html"          >Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./index_curso.html">Cursos</a>
           </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./index_inscrição.html">Inscrição</a>
+            </li>
           <li class="nav-item">
             <a class="nav-link" href="./index_fale.html">Fale Conosco</a>
           </li>
@@ -39,37 +44,38 @@
       </div>
     </div>
   </nav>
+  
+      <div class="contact">
 
-  <div class="p-5">
-    <form class="p-2 border" style="background-color: rgb(253, 239, 242);">
-      <div class="d-grid gap-3">
-        <label for="exampleInputName1" class="form-label">Nome</label>
-        <input type="name" class="form-control" id="exampleInputPassword1">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1">
-      </div>
-      <div>
-        <label for="phone" class="margin-right100px">Celular:</label>
-        <input type="tel" id="phone" name="phone">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Whatsapp</label>
+        <form class="p-2 " style="background-color: rgb(253, 239, 242);">
+          <div class="d-grid gap-3">
+            <label for="exampleInputName1" class="form-label">Nome</label>
+            <input type="name" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
+          </div>
+          <div>
+            <label for="phone" class="margin-right100px">Celular:</label>
+            <input type="tel" id="phone" name="phone">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Whatsapp</label>
 
-      </div>
+          </div>
 
-      <div class="mb-3">
-        <label for="inputText" class="form-label">Assunto:</label>
-        <input type="text" class="form-control" id="inputText1">
+          <div class="mb-3">
+            <label for="inputText" class="form-label">Assunto:</label>
+            <input type="text" class="form-control" id="inputText1">
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
       </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-  </div>
+ 
 
   <footer>
-    <p style="font-size: 1.5em;text-align: center;">Valdelaine Cristina Ribeiro / Isabela Gaiteiro | Web Site |
-      03/06/2022 22:21 </p>
-  </footer>
+    <p class="desenvolvedores">Valdelaine Cristina Ribeiro / Isabela Gaiteiro | Web Site | 03/06/2022 22:21 </p>
+</footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
