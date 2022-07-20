@@ -33,7 +33,7 @@ void lista_prod(string produtos[4]){
 }
 
 void texto(){
-    cout<<"Ensira o valor de cada produto.\n";
+    cout<<"Insira o valor de cada produto.\n";
 }
 
 int soma(int valor[4]){
