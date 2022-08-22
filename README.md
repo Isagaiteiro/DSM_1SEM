@@ -1,7 +1,7 @@
 # DSM_1SEM
 Trabalhos desenvolvidos durante o 1º Semestre do curso superior tecnológico de Desenvolvimento de Software Multiplataforma.
 
-**Aplicações e Dados**
+**Tecnologias Aprendidas no Semestre: **
 
 <div>  
 <img height="50em" align="center" style="padding:15px;" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/css3/css3-original-wordmark.svg"/>
@@ -12,7 +12,6 @@ Trabalhos desenvolvidos durante o 1º Semestre do curso superior tecnológico de
 <img height="50em" align="center" style="padding:15px;" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/git/git-original.svg"/>
 <img height="50em" align="center" style="padding:15px;" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/github/github-original.svg"/>
 <img height="50em" align="center" style="padding:15px;"src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vscode/vscode-original.svg"/>
-<img height="50em" align="center" style="padding:15px;"src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/gimp/gimp-original.svg"/>
 </div>  
 
 # :closed_book: Matérias
