@@ -3,7 +3,7 @@ Trabalhos desenvolvidos durante o 1º Semestre do curso superior tecnológico de
 <br>
 
 
-**Tecnologias Aprendidas no Semestre: **
+#**Tecnologias Aprendidas no Semestre: **
 
 <div>  
 <img height="50em" align="center" style="padding:15px;"src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vscode/vscode-original.svg"/>
